@@ -78,3 +78,18 @@ For production sideload / MDM distribution, use `pnpm tauri:android:build`
 Offline-first sync. Tablets in care facilities have spotty WiFi but for v1
 we assume reachable network. A SQLite write queue + reconciliation pass will
 come in v0.2 (see project plan).
+
+## Downloads
+
+Built installers are published on the
+[GitHub Releases page](https://github.com/rowlow0gold-ops/care-home-tablet/releases)
+on every `vX.Y.Z` tag.
+
+> **Code signing.** Releases are signed using a code-signing certificate
+> generously provided by the [SignPath Foundation](https://signpath.org/),
+> the non-profit code-signing service for open-source projects.
+
+## Privacy
+
+See [PRIVACY.md](PRIVACY.md). The tablet client is a thin UI over a remote
+API; it does not collect telemetry of any kind.
