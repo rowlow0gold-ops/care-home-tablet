@@ -3,7 +3,14 @@
 Caregiver-facing companion app for the **케어닥** franchise SaaS — Tauri 2 + Vue 3 + Quasar.
 
 Runs on iPad, Android tablets, and desktop (Mac/Windows/Linux) for dev. Talks to
-[`care-home-server`](https://github.com/rowlow0gold-ops/care-home-server) directly over HTTPS.
+the [care-home-server](https://care.minhojan-world.site) directly over HTTPS.
+
+> This is the **client** of a multi-tenant SaaS. The server (with the data,
+> tenant isolation, billing, and business logic) is intentionally not open
+> source — this client repo is published under MIT to qualify for free
+> code-signing via the [SignPath Foundation](https://about.signpath.io/).
+> Anyone is welcome to fork the UI; functionality requires a paid care-home
+> tenant on the server.
 
 ## Auth model (mirrors Home Instead / BrightStar / Tsukui patterns)
 
