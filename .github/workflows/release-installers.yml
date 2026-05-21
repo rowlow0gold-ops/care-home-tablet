@@ -48,7 +48,11 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        with: { node-version: 20, cache: pnpm }
+        with:
+          node-version: 20
+          # No `cache: pnpm` here — no lockfile committed yet. First `pnpm
+          # install` on CI generates pnpm-lock.yaml; once committed we can
+          # re-enable caching.
 
       - name: Install Linux deps
         if: matrix.os == 'ubuntu-22.04'
